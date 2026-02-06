@@ -83,7 +83,7 @@ const SettingsModal = ({
               <div className="flex items-center gap-2 text-surface-300 ml-1">
                 <Globe size={16} className="text-primary-400" />
                 <label className="text-sm font-semibold">
-                  Prompt Çıktı Dili
+                  {t('languageLabel')}
                 </label>
               </div>
               <div className="grid grid-cols-2 gap-3">

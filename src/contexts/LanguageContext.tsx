@@ -17,10 +17,10 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   const [language, setLanguage] = useState(() => {
     try {
       const savedLang = localStorage.getItem('prompt-engineer-lang');
-      return savedLang || 'tr';
+      return savedLang || 'en';
     } catch (e) {
       console.warn('LocalStorage blocked, falling back to default language.');
-      return 'tr';
+      return 'en';
     }
   });
 

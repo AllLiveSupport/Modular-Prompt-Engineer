@@ -28,9 +28,9 @@ export const generateSinglePrompt = async ({
   const platformName = platforms.find(p => p.id === targetPlatform)?.name || 'Unknown Platform';
   const platformInstructions = getPlatformSpecificInstructions(targetPlatform);
 
-  // Helper function to get translation for the target output language
+  // Helper function to get translation (Always use English for Meta Prompts to ensure consistent AI behavior)
   const getT = (key: string, params: Record<string, any> = {}) => {
-    let text = translations[outputLanguage]?.[key] || translations['en']?.[key] || key;
+    let text = translations['en']?.[key] || key;
     Object.keys(params).forEach(pk => {
       text = text.replace(`{${pk}}`, params[pk]);
     });
