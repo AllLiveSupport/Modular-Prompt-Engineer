@@ -6,12 +6,12 @@ const Footer: React.FC = () => {
       <p>© {new Date().getFullYear()} Modular Prompt Engineer</p>
       <div className="flex items-center gap-6">
         <a
-          href="https://alllive.support"
+          href="https://github.com/AllLiveSupport/Modular-Prompt-Engineer/issues"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-primary-400 transition-colors"
         >
-          Support
+          Report Issue
         </a>
         <a
           href="https://github.com/AllLiveSupport"
